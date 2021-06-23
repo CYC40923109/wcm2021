@@ -133,9 +133,55 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='評分標準.html'>Next</a> >> 評分標準<br /><h1>首頁</h1>
-<p>xxx</p>
-<br /> <a href='評分標準.html'>Next</a> >> 評分標準</div>
+    <div id="tipue_search_content">第二題-2 << <a href='第二題-2.html'>Previous</a> <a href='期中報告.html'>Next</a> >> 期中報告<br /><h1>W16-2</h1>
+<p>如何建立與推送fossil:</p>
+<p>(fossil是老師為了github被封鎖的同學所建立的倉儲)</p>
+<p>建立步驟:</p>
+<p>1.到<a href="https://fossil-scm.org/home/uv/download.html">https://fossil-scm.org/home/uv/download.html</a>下載windows64</p>
+<p>2.去學校信箱，找scrum1(老師)寄給我們的一封信，裡面有密碼，點擊網址進入fossil測試倉儲(注意:最好點老師信件裡附的網址，若你使用他人給的網址，那麼你的密碼就算正確，fossil也不會讓你進入)</p>
+<p>3.點擊倒數第二行的自訂密碼網址，點menu，點form，到達改密碼的地方，改成專屬於自己的密碼</p>
+<p>4.接著打開可攜式系統，輸入:</p>
+<p>cd tmp </p>
+<p>mdkir w16</p>
+<p>cd w16</p>
+<p>mkdir fossil</p>
+<p>cd fossil</p>
+<p>fossil clone https://409231xx@fossil.kmol.info/u/409231xx 409231xx.fossil (這裡主要是用來將fossil叫來，叫完後出現在fossil檔裡，問你新密碼後他會問你問題，什麼都說好就行，這裡特別要注意的是，空白鍵問題，沒有按空白鍵會失敗)</p>
+<p>mkdir wd</p>
+<p>cd wd</p>
+<p>mkdir 409231xx</p>
+<p>cd 409231xx</p>
+<p>fossil open ./../../409231xx.fossil (這裡主要和fossil建立連結，連結完畢後出現在學號檔裡)</p>
+<p>cd .. </p>
+<p>git clone --recurse- submodules https://github.com/409231xx/wcm2021.git(將github的資料複製一份，會問你帳號密碼，希望你沒有忘記自己的github帳密，注意:用github，不是fossil)</p>
+<p>fossil add. (會跳出很長一串)</p>
+<p>fossil commit "intial add"</p>
+<p>5.推送完成即成功，可打fossil.kmol.info/u/409231xx/doc/trunk/content/index.html進入自己的fossil靜態頁面</p>
+<p></p>
+<p>開啟動態編輯加轉靜態推送步驟:</p>
+<p>1.打開可攜式系統，輸入:</p>
+<p>cd tmp</p>
+<p></p>
+<p>cd w16</p>
+<p></p>
+<p>cd fossil</p>
+<p></p>
+<p>cd wd</p>
+<p></p>
+<p>cd 409231xx</p>
+<p></p>
+<p>cms</p>
+<p></p>
+<p>(和當初進github一樣，轉靜態)</p>
+<p></p>
+<p>2.找wd檔裡的wcm2021裡的acp.bat，放進編輯器裡</p>
+<p>3.接著把git都改成fossil，save</p>
+<p>4.回到可攜式系統，打acp "xx"，就可以成功推送</p>
+<p></p>
+<p>實作教學影片:<a href="https://youtu.be/dV2JzyWrhc4">https://youtu.be/dV2JzyWrhc4</a></p>
+<p></p>
+<div class="d-flex flex-justify-between flex-content-center"></div>
+<br />第二題-2 << <a href='第二題-2.html'>Previous</a> <a href='期中報告.html'>Next</a> >> 期中報告</div>
         
     <!-- footer -->
       <div class="container">
